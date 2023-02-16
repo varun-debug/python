@@ -24,3 +24,11 @@ print(lambda_concat_two(str1,str2))
 #write lambda function to calculate max between two no without max
 lambda_max_two=lambda x,y: x if x>y else y
 print('Max no:',lambda_max_two(5,10))
+
+#implement map function
+list1=[1,2,3,4,5,6,7,8,9]
+
+#result[1, 4, 9, 16, 25, 36, 49, 64, 81]
+square_no=lambda x : x*x
+square_list=list(map(square_no,list1)) #typecast to list to display map 
+print(square_list)
