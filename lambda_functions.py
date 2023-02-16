@@ -32,3 +32,13 @@ list1=[1,2,3,4,5,6,7,8,9]
 square_no=lambda x : x*x
 square_list=list(map(square_no,list1)) #typecast to list to display map 
 print(square_list)
+
+#add sequential respective elements in two given lists
+#means add first element with other list first element
+list_a=[1,2,3,4,5]
+list_b=[5,4,3,2,1]
+add_two_list=lambda x,y: x + y
+sum_two_list=list(map(add_two_list, list_a,list_b))
+print(sum_two_list)
+
+#output= [6,6,6,6,6]
