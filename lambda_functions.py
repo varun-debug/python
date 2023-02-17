@@ -58,3 +58,11 @@ multiply_two_no=lambda x,y: x * y
 
 result=functools.reduce(multiply_two_no,list_x)
 print(result)
+
+#how to use filter
+#create filter to see only odd no
+seq=[1,2,4,5,7,8,9]
+
+odd_no = lambda x: x%2!=0
+result = list(filter(odd_no,seq))
+print(result)
