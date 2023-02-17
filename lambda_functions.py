@@ -42,3 +42,19 @@ sum_two_list=list(map(add_two_list, list_a,list_b))
 print(sum_two_list)
 
 #output= [6,6,6,6,6]
+
+#how to reduce 
+#we need to import to use reduce functionality
+
+import functools
+list_x=[1,2,3,4,5]
+add_two_nums=lambda x,y: x + y
+
+result=functools.reduce(add_two_nums,list_x)
+print(result)
+
+
+multiply_two_no=lambda x,y: x * y
+
+result=functools.reduce(multiply_two_no,list_x)
+print(result)
