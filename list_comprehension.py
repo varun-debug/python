@@ -9,6 +9,10 @@ print(list1)
 list1=[i for i in range(1,12)]
 print(list1)
 
+#print even 1-20 no using list comprehension
+list_even=[i for i in range(1,21) if i%2==0 ]
+print(list_even)
+
 #convert all string into uppercase
 list_a=['abc','upper','varun','akshay','vaibhav']
 uppercase_result = [ i.upper() for i in list_a]
