@@ -35,3 +35,25 @@ except IndexError:
     print('Because index error has occured')
 except KeyError:
     print("Key was not there in the dictionary")
+
+#or else u can directly give one stmt to show exception
+except Exception as err:
+    print("Error occured:",err)
+ 
+a=5
+try:
+
+    result = a/0
+    print(result)
+except ZeroDivisionError:
+    print('Divide by zero')
+
+#if try is successfull with no error than else will get execute
+else:
+    print('calculate the result')
+    print(result)
+
+#doesn't matter of success and fail of try this will exceute no matter whats happens
+#it can be used to release the resources
+finally:
+    print("I will get execute doesn't matter what comes ")
